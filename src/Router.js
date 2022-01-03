@@ -10,6 +10,7 @@ import SignIn from './views/forms/SignIn';
 import SignUp from './views/forms/SignUp';
 import AuthSignUp from './views/forms/AuthSignUp';
 import AccountLayout from './layouts/AccountLayout';
+import Auth from './firebase/Auth'
 
 const Routers = (props) => {
     return (
@@ -21,6 +22,9 @@ const Routers = (props) => {
                             <Switch>
                                 <Route exact path="/">
                                     <Home />
+                                </Route>
+                                <Route exact path="/auth">
+                                    <Auth />
                                 </Route>
                                 <Route exact path="/our-story">
                                     <OurStory />
